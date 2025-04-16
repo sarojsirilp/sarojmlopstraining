@@ -15,5 +15,12 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
+    - name: Submit training job to Azure ML
+      run: |
+        az ml job create --file src/job.yml --workspace-name aml-tccc-ms-training-dts-dsml-poc --resource-group rg-tccc-ms-training-for-dts-dsml-poc
+
+
+
+
 
 
