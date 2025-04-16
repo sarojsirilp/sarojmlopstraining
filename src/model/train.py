@@ -68,9 +68,16 @@ def train_model(reg_rate, X_train, X_test, y_train, y_test):
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-    "--training_data", dest="training_data", type=str)
+        "--training_data",
+        dest="training_data",
+        type=str
+    )
     parser.add_argument(
-    "--reg_rate", dest="reg_rate", type=float, default=0.01)
+        "--reg_rate",
+        dest="reg_rate",
+        type=float,
+        default=0.01
+    )
     return parser.parse_args()
 
 
