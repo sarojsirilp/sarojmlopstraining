@@ -23,4 +23,4 @@ jobs:
     - name: pytest
       run: |
         pip install pytest
-        pytest test_train.py
+        pytest train.py
