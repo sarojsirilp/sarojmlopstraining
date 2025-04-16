@@ -2,7 +2,6 @@ name: Manually trigger an Azure Machine Learning job
 
 on:
   workflow_dispatch:
-
 jobs:
   train:
     runs-on: ubuntu-latest
